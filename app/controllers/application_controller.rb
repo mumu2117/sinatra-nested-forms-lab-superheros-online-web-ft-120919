@@ -1,6 +1,11 @@
 require 'sinatra/base'
 
-get '/' do
+
+
+set :views, Proc.new { File.join(root, "../views/") }
+
+
+    get '/' do
       erb :super_hero
     end
 
@@ -11,5 +16,5 @@ get '/' do
 
       erb :team
     end
-    
-  
+
+
