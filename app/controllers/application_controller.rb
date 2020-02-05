@@ -12,4 +12,4 @@ get '/' do
       erb :team
     end
     
- 
+  
